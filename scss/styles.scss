@@ -1,9 +1,26 @@
 
 $deepBlue: #032f3e;
 $sectionHeading: 24px;
+$offWhite: #f8f9fb;
 
 #main-nav {
   background: $deepBlue;
+  ul {
+    width: 100%;
+  }
+
+  li {
+    float: left;
+    width: 14%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $offWhite;
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }
 }
 
 section h1 {

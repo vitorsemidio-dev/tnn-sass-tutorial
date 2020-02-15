@@ -1,6 +1,20 @@
 #main-nav {
   background: #032f3e;
 }
+#main-nav ul {
+  width: 100%;
+}
+#main-nav li {
+  float: left;
+  width: 14%;
+}
+#main-nav a {
+  text-decoration: none;
+  color: #f8f9fb;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
 
 section h1 {
   font-size: 24px;
