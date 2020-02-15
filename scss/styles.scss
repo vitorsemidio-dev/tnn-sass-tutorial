@@ -67,3 +67,11 @@ section h1 {
   font-size: $sectionHeading;
   color: $deepBlue;
 }
+
+.lead-banner {
+  @include banner;
+}
+
+.lessons-banner {
+  @include banner;  
+}
