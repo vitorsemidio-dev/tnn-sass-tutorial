@@ -23,6 +23,12 @@ $offWhite: #f8f9fb;
   }
 }
 
+#main-nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 section h1 {
   font-size: $sectionHeading;
   color: $deepBlue;
