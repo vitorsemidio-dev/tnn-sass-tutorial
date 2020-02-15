@@ -30,3 +30,37 @@ Após ser compilado, o arquivo **.css** entenderá assim:
     color: #032f3e;
   }
 ```
+
+## 2. Mixin
+
+É uma maneira de reaproveitar o código css em várias classes. Nós injetamos o código nos elementos que queremos, podendo adicionar novas estilos, se necessário. Estrutura inicial de um **mixin** segue o exemplo abaixo:
+
+```scss
+ @mixin nome-do-mixin {
+   // estilos do mixin
+   font-size: 10px;
+   padding: 10px;
+   margin: 10px;
+ }
+```
+
+E para utilizá-lo em outros elementos devemos usar o **@include**. E também podemos adicinar estilos extras necessários para aquele elemento. Exemplo abaixo:
+
+```scss
+  .titulo-10 {
+    @include nome-do-mixin;
+    
+    // novos estilos
+    color: #00ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .link-10 {
+    @include nome-do-mixin;
+
+    // novos estilos
+    text-decoration: none;
+    text-align: center;
+  }
+```
