@@ -1,3 +1,12 @@
-li {
-  color: rga(199, 199, 200);
+
+$deepBlue: #032f3e;
+$sectionHeading: 24px;
+
+#main-nav {
+  background: $deepBlue;
+}
+
+section h1 {
+  font-size: $sectionHeading;
+  color: $deepBlue;
 }
