@@ -20,6 +20,12 @@
     display: block;
     text-transform: uppercase;
     font-weight: bold;
+    @include mQ(3000px, 900px) {
+      font-size: 68px;
+    }
+    @include mQ(900px) {
+      font-size: 32px;
+    }
   }
 
   span.title {

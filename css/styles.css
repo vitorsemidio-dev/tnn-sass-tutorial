@@ -43,7 +43,7 @@ li {
   float: left;
   width: 16.6666666667%;
 }
-@media screen and (max-width: 800px) and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   #main-nav li {
     width: 100%;
   }
@@ -84,6 +84,16 @@ section h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (max-width: 3000px) and (min-width: 900px) {
+  .lead-banner span {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lead-banner span {
+    font-size: 32px;
+  }
+}
 .lead-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
@@ -107,6 +117,16 @@ section h1 {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
+}
+@media screen and (max-width: 3000px) and (min-width: 900px) {
+  .lessons-banner span {
+    font-size: 68px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lessons-banner span {
+    font-size: 32px;
+  }
 }
 .lessons-banner span.title {
   font-weight: normal;
