@@ -1,5 +1,8 @@
 # The Net Ninja - SASS Tutorial
 
+## Link da Aula
+* **Link da Playlist das aulas no YouTube: [The Net Ninja - SASS Tutorial](https://www.youtube.com/watch?v=St5B7hnMLjg&list=PL4cUxeGkcC9iEwigam3gTjU_7IA3W2WZA&index=1)**
+
 ## 1. Variáveis
 
 Para criar uma variável um valor nela no sass basta iniciar com **$** seguido do nome. E para salvar um valor, deve-se adicionar após o dois pontos. Veja o exemplo abaixo:
