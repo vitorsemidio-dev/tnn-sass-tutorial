@@ -225,3 +225,29 @@ Com o **@content** podemos passar um conteúdo de estilização. No exemplo da a
     width: 100%;
   }
 ```
+## 9. @if
+
+* Podemos utilizar o **@if** para controlar o fluxo do estilo que deverá ser aplicado.
+* Mixin podem receber argumentos variáveis
+
+Unindo essas duas informações, podemos então criar um **@mixin** para aplicar estilos diferentes para cada quantidade de parâmetros que recebe. Neste aula foi utilizado o **@if** denttro do **@mixin mQ** para ou ser informado somente a largura máxima ou máxima e mínima.
+
+Para a gente permitir que o **@mixin** receba argumentos variados, devemos adicionar **...** ao final do argumento. E para saber a quantidade argumentos que foram passados, utilizamos a função **length**.
+
+### O código da aula ficou assim:
+
+```scss
+@mixin mQ($arg...) {
+  @if length($arg) == 1 {
+    @media screen and (max-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+  @if length($arg) == 2 {
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+      @content;
+    }
+  }
+}
+
+```
