@@ -64,3 +64,40 @@ E para utilizá-lo em outros elementos devemos usar o **@include**. E também po
     text-align: center;
   }
 ```
+
+## 3. Import
+
+Quando um arquivo **.scss** começa e ficar muito grande e responsável pela estilização de vários elementos, passa a ser interessante pensar na ideia de separar em outros arquivos alguns pedaços do código, modularizá-lo. Após ter separado o código em mais arquivo, nós podemos importar esses estilos em um único usando **@import**.
+
+No exemplo sobre **variáveis** e **mixin** se todo o código estivesse em um só arquivo, poderíamos passar a deixar as variáveis em um chamado *variavel.scss* e os mixin em outro chamado *mixins.scss*. E no nosso arquivo principal, *styles.scss*, a gente importaria os estilos dos demais utilizando **@import** conforme exemplo abaixo:
+
+```scss
+  @import "variaveis.scss";
+  @import "mixins.scss";
+
+  #main-nav {
+    background: $deepBlue;
+  }
+
+  section h1 {
+    font-size: $sectionHeading;
+    color: $deepBlue;
+  }
+
+  .titulo-10 {
+    @include nome-do-mixin;
+    
+    // novos estilos
+    color: #00ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .link-10 {
+    @include nome-do-mixin;
+
+    // novos estilos
+    text-decoration: none;
+    text-align: center;
+  }
+```
