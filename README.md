@@ -187,3 +187,20 @@ Mixin também é possível receber argumento e utilizá-los para algum calculo n
 
   }
 ```
+
+## 7. Funções
+
+Utilizando **.scss** é possível utilizar algumas funções. [Clique aqui](https://sass-lang.com/documentation/modules) para acessar a documentação e saber mais funções.
+
+Na aula foram utilizadas as funções **lighten** e **complement** para clarear e pegar o complemento de uma certa cor. Abaixo o exemplo da aula:
+
+```scss
+  div {
+    &:hover {
+      color: complement($deepBlue);
+    }
+    &:hover {
+      background: lighten($deepBlue, 5);
+    }
+  }
+```
