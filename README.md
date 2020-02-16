@@ -101,3 +101,47 @@ No exemplo sobre **variáveis** e **mixin** se todo o código estivesse em um s�
     text-align: center;
   }
 ```
+## 4. Pseudo Classes e Operador &
+
+Utilizar o **&** é extremamente útil para aninhamento e até evitar certas repetições. Normalmente estilizamos uma classe/id/tag. E dps queremos um estilo diferente para quando ela sofre algum evento de *active*/*focus*/*hover* etc...
+
+Ao invés de fazer assim: 
+
+```scss
+  .class {
+    // estilo
+  }
+
+  .class:hover {
+    // estilo para quando sofrer evento de "hover"
+  }
+  
+  .class:focus {
+    // estilo para quando sofrer evento de "focus"
+  }
+
+  .class .sub-class  {
+    // estilo para sub-class
+  }
+```
+
+Podemos utilizar o operador **&** dentro da classe **.class**, e o código fica assim:
+
+```scss
+  .class {
+    // estilo da classe .class
+  
+    &:hover {
+      // estilo para quando sofrer evento de "hover"
+    }
+    
+    &:focus {
+      // estilo para quando sofrer evento de "focus"
+    }
+  
+    &.sub-class {
+      // estilo para sub-class
+    }
+
+  }
+```
