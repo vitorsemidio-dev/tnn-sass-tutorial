@@ -168,3 +168,22 @@ Podemos utilizar o operador **&** dentro da classe **.class**, e o código fica 
     }
   }
 ```
+
+## 6. Grid com operadores matemáticos e mixin
+
+Mixin também é possível receber argumento e utilizá-los para algum calculo no estilo. No Exemplo desta aula foi criado uma grid usando conteúdo de aulas anteriores. Para adicionármos grid a algum elemento, a gente inclui o **@mixin grid** usando **@include** e passamos quantas colunas desejamos e qual o tamanho do espaçamento entre os itens. Abaixo o exemplo de como ficou o **@mixin grid**:
+
+```scss
+  @mixin grid($cols, $mgn) {
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    width: ( (100% - (($cols - 1) * $mgn)) / $cols );
+
+    // n-ésimo (último) elemento com margin-right 0
+    &:nth-child(#{$cols}n) {
+      margin-right: 0;
+    }
+
+  }
+```
