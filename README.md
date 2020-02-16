@@ -145,3 +145,26 @@ Podemos utilizar o operador **&** dentro da classe **.class**, e o código fica 
 
   }
 ```
+
+## 5. Operadores Matemáticos
+
+É possível utilizar operadores matemáticos nos arquivos **.scss**. É interessante para quando deseja-se calcular larguras em porcentagem para dividir o espeço entre os elementos igualmente. Para usar uma expressão matemática deve-se usar parenteses e dentro dele fazer a expressão.
+
+```scss
+  .exemplo-1 {
+    font-size: (16px + 2);
+    padding: (20px + 2);
+    margin: (50px / 2);
+    border: (5px - 3);
+  }
+
+  // Elemento com 5 filhos
+  .pai {
+    width: 100%;
+
+    .filho {
+      // Dividindo o espeço igualmente
+      width: (100% / 5);
+    }
+  }
+```
