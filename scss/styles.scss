@@ -15,7 +15,7 @@
   li {
     float: left;
     width: (100% / 6);
-    @include mQ(600px) {
+    @include mQ(800px, 600px) {
       width: 100%;
     }
   }
