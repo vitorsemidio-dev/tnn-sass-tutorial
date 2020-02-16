@@ -204,3 +204,24 @@ Na aula foram utilizadas as funções **lighten** e **complement** para clarear 
     }
   }
 ```
+
+## 8. @content
+
+Com o **@content** podemos passar um conteúdo de estilização. No exemplo da aula foi criado **@mixin** para Media Query que recebia a largura onde deveria começar a aplicar o estilo conforme o tamanho da tela. E dentro o **@mixin** foi utilizando o **@content** para a classe que utilizar o mixin não informar somente a largura, mas também os estilos que deveria ser aplicado.
+
+### Mixin
+
+```scss
+  @mixin mQ($arg) {
+    @media screen and (max-width: $arg) {
+      @content;
+    }
+  }
+```
+
+### Chamando o mixin, passando argumento e o conteúdo
+```scss
+  @include mQ(600px) {
+    width: 100%;
+  }
+```
