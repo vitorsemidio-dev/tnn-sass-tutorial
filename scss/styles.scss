@@ -80,6 +80,7 @@ section h1 {
 }
 
 #projects li {
+  @include grid(4, 2%);
   img {
     width: 100%;
   }
